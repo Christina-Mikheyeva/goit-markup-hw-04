@@ -1,0 +1,344 @@
+   
+   :root {
+        --iris-color: #4D5AE5;
+        --ocean:#404BBF;
+        --navy-blue-color: #2E2F42;
+        --slat-color: #434455;
+        --cloud-color: #F4F4FD;  
+        --cornflower: #E7E9FC;
+    }
+    
+    .container {
+        width: 1158px; 
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    } 
+                               
+    body {
+        color: #434455;
+        background-color: #FFFFFF;
+
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        line-height: 1.5;   
+        letter-spacing: 0.02em;                     
+    }   
+
+    a {
+        text-decoration: none;
+        color: var(--slat-color);
+    }
+
+    ul, ol {
+        list-style-type: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    img {
+        display: block;
+    }
+    
+    button {
+        cursor: pointer;
+        background-color: transparent;
+    }
+    
+/* ====================================== HEADER ===================================================*/
+
+.header {
+    border-bottom: 1px solid var(--cornflower);
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ====================================== LOGO ==================================================== */
+
+
+.logo {
+    display: inline-block;
+    color: var(--iris-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;        
+}
+
+.header .logo {
+    margin-right: 76px;
+}
+
+.logo:focus,
+.logo:hover {
+    color: var(--ocean);
+}
+
+.logo-studio {
+    color: var(--navy-blue-color); 
+}
+
+/* ====================================== NAV ======================================================= */
+
+
+.nav {
+    display: flex;
+    padding: 24px 0px;
+    align-items: center;
+}   
+
+.nav-list {
+    display: flex;
+    gap: 40px;    
+}
+
+.nav-list .link {
+    color: var(--navy-blue-color);
+    font-weight: 500; 
+}
+
+.nav-list .link:focus,
+.nav-list .link:hover {
+    color: var(--ocean);
+}
+
+/* ====================================== ADDRESS ==================================================== */
+
+
+.address {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.address .link,
+.address {
+    color: var(--slat-color);
+    font-style: normal;  
+}
+
+.address .link:focus,
+.address .link:hover {
+    color: var(--ocean);
+}
+
+.address-list {
+    display: flex;
+    gap: 40px;
+}
+
+.link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+/* ====================================== SECTION HERO ================================================ */
+
+
+.hero {
+    background-color: var(--navy-blue-color);
+    text-align: center;  
+    padding-top: 188px;
+    padding-right: 0;
+    padding-bottom: 188px;
+    padding-left: 0;
+}
+
+.hero-title {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 48px;
+    max-width: 496px;
+      
+    color:white;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;    
+}
+
+/* ====================================== BUTTON ======================================================== */
+
+
+.button {
+    display: block;
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    min-width: 169px;
+
+    color: white;
+    background-color: var(--iris-color);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+
+.button:focus,
+.button:hover {
+    background-color: var(--ocean);
+}
+
+/* ====================================== SECTION 1 (OUR VALUE)============================================*/
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;  
+}
+
+.section-title {
+    margin-bottom: 72px;
+
+    color: var(--navy-blue-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section-list .section-topic {
+    margin-bottom: 8px;
+
+    color: var(--navy-blue-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.section-list,
+.section-text {    
+    font-size: 16px;
+}
+
+.section-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    /* row-gap: 48px; */
+    /* column-gap: 24px;     */
+}
+
+.padding-zero {
+    padding-bottom: 0;
+}
+
+.item {    
+    flex-basis: calc((100% - 3*24px) / 4);
+}
+
+/* ====================================== SECTION 2 (OUR TEAM)=========================================== */
+
+
+.team {
+    background-color: var(--cloud-color);
+    text-align: center;
+}
+
+.team .section-card {
+    border-radius: 0px 0px 4px 4px;    
+}
+
+.section-card {
+    background-color: #ffffff;    
+}
+
+.card {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.card > .section-topic {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.card > .section-text {
+    text-align: center;
+}
+
+/* ====================================== SECTION 3 (PORTFOLIO)============================================*/
+
+
+.portfolio > .item {
+flex-basis: calc((100% - 2*24px) / 3);
+}
+
+ .portfolio {
+    row-gap: 48px;
+ }
+
+.border {
+    border-right: 1px solid var(--cornflower);
+    border-bottom: 1px solid var(--cornflower);
+    border-left: 1px solid var(--cornflower);
+    padding-top: 32px;
+    padding-right: 16px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+}
+
+/* ====================================== FOOTER ==========================================================*/
+
+
+.footer {
+    background-color: var(--navy-blue-color);
+    padding: 100px 0;
+}
+
+.text-studio,
+.footer-text {
+    color: var(--cloud-color);
+}
+
+.footer-studio {
+   color: var(--cloud-color);
+}
+
+.footer .logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.footer-text {
+    width: 264px;
+}
