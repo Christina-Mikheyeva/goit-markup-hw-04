@@ -1,11 +1,13 @@
    
    :root {
         --iris-color: #4D5AE5;
-        --ocean:#404BBF;
+        --ocean:#404BBF; /*hover, focus*/
         --navy-blue-color: #2E2F42;
         --slat-color: #434455;
         --cloud-color: #F4F4FD;  
         --cornflower: #E7E9FC;
+        --grey: rgba(46, 47, 66, 0.70); /* hero gradient */
+        --light-slate: #8E8F99; /*border color*/
     }
     
     .container {
@@ -153,12 +155,30 @@
 
 
 .hero {
-    background-color: var(--navy-blue-color);
     text-align: center;  
     padding-top: 188px;
     padding-right: 0;
     padding-bottom: 188px;
     padding-left: 0;
+
+    /* background-color: var(--navy-blue-color); */
+}
+
+.overlay {
+    min-height: 600px;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+
+    background-image: linear-gradient(
+    var(--grey),
+    var(--grey)),
+    url(../images/hero.jpg);
+    background-color: var(--grey);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .hero-title {
@@ -233,6 +253,18 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.decorations::before {
+content: "";
+display: block;
+min-width: 264px;
+min-height: 112px;
+border: 1px solid var(--light-slate);
+border-radius: 4px;
+
+background: var(--cloud-color);
+
 }
 
 .section-list .section-topic {
