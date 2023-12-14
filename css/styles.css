@@ -122,6 +122,17 @@
     color: var(--ocean);
 }
 
+.test:hover::after {
+    content: '';
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: var(--ocean);    
+}
+
 /* ====================================== ADDRESS ==================================================== */
 
 
@@ -255,17 +266,41 @@
     overflow: hidden;
 }
 
-.decorations::before {
-content: "";
-display: block;
-min-width: 264px;
-min-height: 112px;
-border: 1px solid var(--light-slate);
-border-radius: 4px;
-
-background: var(--cloud-color);
-
+.decoration::before {
+    content: '';
+    display: block;
+    height: 112px;
+    border: 1px solid var(--light-slate);
+    border-radius: 4px;
+    
+    background-color: var(--cloud-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px 64px;
 }
+
+.item:nth-child(1)::before {
+    background-image: url(/images/decorations/antenna.svg);
+}
+
+.item:nth-child(2)::before {
+    background-image: url(/images/decorations/clock.svg);
+}
+
+.item:nth-child(3)::before {
+    background-image: url(/images/decorations/diagram.svg);
+}
+
+.item:nth-child(4)::before {
+    background-image: url(/images/decorations/astronaut.svg);
+}
+
+
+
+
+
+
+
 
 .section-list .section-topic {
     margin-bottom: 8px;
