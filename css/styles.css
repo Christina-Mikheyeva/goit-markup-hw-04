@@ -266,41 +266,17 @@
     overflow: hidden;
 }
 
-.decoration::before {
-    content: '';
-    display: block;
+.decorations {
+    display: flex;
+    flex-wrap: wrap;
     height: 112px;
     border: 1px solid var(--light-slate);
     border-radius: 4px;
-    
+    justify-content: center;
+    align-content: center;
+
     background-color: var(--cloud-color);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 64px 64px;
 }
-
-.item:nth-child(1)::before {
-    background-image: url(/images/decorations/antenna.svg);
-}
-
-.item:nth-child(2)::before {
-    background-image: url(/images/decorations/clock.svg);
-}
-
-.item:nth-child(3)::before {
-    background-image: url(/images/decorations/diagram.svg);
-}
-
-.item:nth-child(4)::before {
-    background-image: url(/images/decorations/astronaut.svg);
-}
-
-
-
-
-
-
-
 
 .section-list .section-topic {
     margin-bottom: 8px;
@@ -321,8 +297,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    /* row-gap: 48px; */
-    /* column-gap: 24px;     */
 }
 
 .padding-zero {
@@ -361,6 +335,23 @@
 
 .card > .section-text {
     text-align: center;
+}
+
+.social-networks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.social-networks-items {
+    display: block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+
+    background-color: var(--iris-color);
 }
 
 /* ====================================== SECTION 3 (PORTFOLIO)============================================*/
