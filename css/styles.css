@@ -274,6 +274,7 @@
     border-radius: 4px;
     justify-content: center;
     align-content: center;
+    margin-bottom: 8px;
 
     background-color: var(--cloud-color);
 }
@@ -337,11 +338,15 @@
     text-align: center;
 }
 
-.social-networks {
+.soc-net {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
+}
+
+.social-networks-list {
+    display: flex;
 }
 
 .social-networks-items {
@@ -352,6 +357,10 @@
     flex-shrink: 0;
 
     background-color: var(--iris-color);
+}
+
+.social-networks-link {
+
 }
 
 /* ====================================== SECTION 3 (PORTFOLIO)============================================*/
@@ -392,9 +401,19 @@ flex-basis: calc((100% - 2*24px) / 3);
    color: var(--cloud-color);
 }
 
+.flex {
+    display: flex;
+}
+
 .footer .logo {
     display: inline-block;
     margin-bottom: 16px;
+    margin-right: 269px;
+}
+
+.footer-title {
+    color: #ffffff;
+    font-weight: 500;
 }
 
 .footer-text {
