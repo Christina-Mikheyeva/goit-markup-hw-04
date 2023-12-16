@@ -52,6 +52,7 @@
 
     img {
         display: block;
+        margin-bottom: 32px;
     }
     
     button {
@@ -280,8 +281,6 @@
 }
 
 .section-list .section-topic {
-    margin-bottom: 8px;
-
     color: var(--navy-blue-color);
     font-size: 20px;
     font-weight: 500;
@@ -298,6 +297,14 @@
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+
+}
+
+.section-list-items {
+    border-radius: 0px 0px 4px 4px;
+
+    background: #ffffff;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .padding-zero {
@@ -325,42 +332,41 @@
 }
 
 .card {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
-.card > .section-topic {
-    text-align: center;
-    margin-bottom: 8px;
-}
-
-.card > .section-text {
-    text-align: center;
-}
-
-.soc-net {
-    display: flex;
+    display: inline-flex;
+    width: 232px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    row-gap: 8px; 
 }
 
 .social-networks-list {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+    padding-bottom: 32px;
+    
 }
 
 .social-networks-items {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     width: 40px;
     height: 40px;
     flex-shrink: 0;
 
     background-color: var(--iris-color);
-}
+} 
 
 .social-networks-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    fill: var(--cloud-color);
 }
 
 /* ====================================== SECTION 3 (PORTFOLIO)============================================*/
