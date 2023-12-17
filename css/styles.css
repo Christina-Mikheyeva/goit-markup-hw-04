@@ -500,11 +500,13 @@
 .position-socialtext {
     display: flex;
     column-gap: 269px;
+    align-items: baseline;
 }
 
 .position-socialicons {
     display: flex;
     column-gap: 120px;
+    align-items: baseline;
 }
 
 .gap {
