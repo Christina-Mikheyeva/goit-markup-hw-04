@@ -505,7 +505,7 @@
 
 .position-socialicons {
     display: flex;
-    column-gap: 120px;
+    margin-right: 120px;
     align-items: baseline;
 }
 
