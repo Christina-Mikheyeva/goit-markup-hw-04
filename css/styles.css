@@ -148,6 +148,7 @@
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        color: var(--ocean);
    }
 
    .active::after {
@@ -215,9 +216,10 @@
        margin-right: auto;
        margin-left: auto;
 
-       background-image: linear-gradient(var(--grey),
-               var(--grey)),
-           url(../images/hero.jpg);
+       background-image: linear-gradient
+       (var(--grey),
+        var(--grey)),
+        url(../images/hero.jpg);
        background-color: var(--grey);
        /* background-color: var(--navy-blue-color); */
        background-repeat: no-repeat;
@@ -262,7 +264,7 @@
        letter-spacing: 0.04em;
        text-align: center;
 
-       transition-property: color;
+       transition-property: background-color;
        transition-duration: 250ms;
        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    }
