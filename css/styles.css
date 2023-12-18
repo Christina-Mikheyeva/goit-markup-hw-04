@@ -62,7 +62,6 @@
 
    img {
        display: block;
-       margin-bottom: 32px;
    }
 
    button {
@@ -120,7 +119,6 @@
 
    .nav {
        display: flex;
-       padding: 24px 0px;
        align-items: center;
    }
 
@@ -143,7 +141,7 @@
         color: var(--ocean);
    }
 
-   .active {
+   .nav-list .active {
         position: relative;
         transition-property: color;
         transition-duration: 250ms;
@@ -169,12 +167,6 @@
 
    /* ====================================== ADDRESS ==================================================== */
 
-
-   .address {
-       padding-top: 24px;
-       padding-bottom: 24px;
-   }
-
    .address .link,
    .address {
        color: var(--slat-color);
@@ -198,6 +190,7 @@
    }
 
    .link {
+       display: block;
        padding-top: 24px;
        padding-bottom: 24px;
    }
@@ -370,14 +363,13 @@
    }
 
    .card {
-       display: inline-flex;
-       width: 232px;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       row-gap: 8px;
        padding-top: 32px;
        padding-bottom: 32px;
+   }
+
+   .section-topic,
+   .section-text {
+    margin-bottom: 8px;
    }
 
    .social-networks-list {
@@ -385,40 +377,33 @@
        justify-content: center;
        align-items: flex-start;
        gap: 24px;
-       padding-bottom: 32px;
    }
 
    .social-networks-items {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       border-radius: 50%;
        width: 40px;
        height: 40px;
-       flex-shrink: 0;
-
-       background-color: var(--iris-color);
-       transition-property: color;
-       transition-duration: 250ms;
-       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-   }
-
-   .social-networks-items:hover,
-   .social-networks-items:focus {
-       background-color: var(--ocean);
-   }
-
-   .social-networks-link {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-
-
-       fill: var(--cloud-color);
-       transition-property: background-color;
-       transition-duration: 250ms;
-       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-   }
+    }
+    
+    .social-networks-link:hover,
+    .social-networks-link:focus {
+        background-color: var(--ocean);
+    }
+    
+    .social-networks-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        
+        background-color: var(--iris-color);
+        fill: var(--cloud-color);
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
    /* ====================================== SECTION 3 (PORTFOLIO)============================================*/
 
@@ -465,8 +450,12 @@
 
        color: var(--cloud-color);
        background-color: var(--iris-color);
-       transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
        /* opacity: 0; */
+   }
+
+   .portfolio>.item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
    }
 
    .portfolio>.item:hover .overlay-text {
@@ -482,6 +471,15 @@
        background-color: var(--navy-blue-color);
        padding: 100px 0;
    }
+ 
+   .footer > .container {
+       display: flex;
+       align-items: baseline;
+   }
+
+   .position-socialtext{
+    margin-right: 120px;
+   }
 
    .text-studio,
    .footer-text {
@@ -492,22 +490,12 @@
        color: var(--cloud-color);
    }
 
-   .position-socialtext {
-       display: flex;
-       column-gap: 269px;
-   }
-
-   .position-socialicons {
-       display: flex;
-       column-gap: 120px;
-   }
-
    .gap {
        gap: 16px;
    }
 
-   .gap .social-networks-items:hover,
-   .gap .social-networks-items:focus {
+   .gap .social-networks-link:hover,
+   .gap .social-networks-link:focus {
        background-color: var(--green);
    }
 
