@@ -69,6 +69,10 @@
        background-color: transparent;
    }
 
+   input {
+    font-family: inherit;
+   }
+
    /* ====================================== HEADER ===================================================*/
 
    .header {
@@ -481,6 +485,10 @@
     margin-right: 120px;
    }
 
+   .position-socialicons{
+    margin-right: 120px;
+   }
+
    .text-studio,
    .footer-text {
        color: var(--cloud-color);
@@ -512,4 +520,18 @@
 
    .footer-text {
        width: 264px;
+   }
+
+   /* ====================================== SUBSCRIBE ======================================================== */
+
+
+   .subscribe-form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+   }
+
+   .subscribe-button {
+
+
    }
