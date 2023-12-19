@@ -66,7 +66,6 @@
 
    button {
        cursor: pointer;
-       background-color: transparent;
    }
 
    input {
@@ -237,11 +236,12 @@
        letter-spacing: 0.02em;
    }
 
-   /* ====================================== BUTTON ======================================================== */
-
+     /*-------- BUTTON *----------*/
 
    .button {
-       display: block;
+       display: inline-flex;
+       justify-content: center;
+       align-items: center;
        padding-top: 16px;
        padding-right: 32px;
        padding-bottom: 16px;
@@ -249,7 +249,6 @@
        margin: 0 auto;
        border: none;
        border-radius: 4px;
-       min-width: 169px;
 
        color: white;
        background-color: var(--iris-color);
@@ -258,7 +257,6 @@
        font-weight: 500;
        line-height: 1.5;
        letter-spacing: 0.04em;
-       text-align: center;
 
        transition-property: background-color;
        transition-duration: 250ms;
@@ -526,12 +524,42 @@
 
 
    .subscribe-form{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+        display: inline-flex;
+        flex-direction: column;
+        gap: 16px;
    }
 
-   .subscribe-button {
-
-
+    .subscribe-label {
+        font-weight: 500;   
+        color: #ffffff;
    }
+
+    .subscribe-input::placeholder {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 16px;
+
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 12px;
+        line-height: 2.0; /* 24px/12 */
+        letter-spacing: 0.04em; /* 0.48px/12 */
+   }
+
+   .subscribe-input {
+        border-radius: 4px;
+        border: 1px solid #ffffff;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        width: 264px;
+        height: 40px;
+        flex-shrink: 0;
+
+        background-color: transparent;
+   }
+
+   /*-------- BUTTON *----------*/
+
+   .subscribe {
+        padding: 8px 24px;
+        gap: 16px;
+    }
